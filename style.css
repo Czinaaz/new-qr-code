@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap");
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,42 +8,112 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    height: 100vh;
-    background-image: url("./images/bg/gray-background-with-white-texture-that-says-grunge_937196-2833.png");
-    background-size: auto;
-    background-position: center;
+    background-color: #f0f2f5; /* Soft neutral background */
+}
+
+
+.navigation-bar nav {
+    margin-left: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #183a53; /* Hover effect */
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.logo-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+}
+.logo-section {
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr{
+    font-family: "Bebas Neue", sans-serif;
+    color: #183a53;
+    font-size: 40px;
+    font-weight: 900;
+}
+.code {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+.generator {
+    font-family:cursive;
+    color: #1e5275;
+    font-size: 38px;
+    font-weight: 700;
 }
 
 .header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #c0d2d1;
+    background: linear-gradient(
+        to bottom,
+        #9aabb6,
+        #9aabb6e2); /* Darker muted blue-grey */
     color: #ffffff;
 }
 
+.main_container {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    background-image: linear-gradient(to top,#9aabb6cd,#9aabb620),url(./images/bg/gray-background-with-white-texture-that-says-grunge_937196-2833.png);
+    background-size: auto;
+    background-position: center;
+}
 
 .wrapper {
     background-color: #ffffff;
     padding: 5em 4em;
-    position: absolute;
+    position: relative;
     width: 31.25em;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 0.6em;
-    box-shadow: 0 1.5em 3em #5b6f6e;
+    box-shadow: 0 1.5em 3em rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .wrapper {
     border-radius: 0.5em;
-    box-shadow: 0 1em 2em #5b6f6e;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.1);
 }
 
 #userInput {
     width: 100%;
     border: none;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #5a6f7d; /* Consistent color */
     padding: 0.5em 1em;
     font-size: 1em;
     outline: none;
@@ -61,7 +134,7 @@ select {
     font-size: 1.25em;
     letter-spacing: 0.5px;
     cursor: pointer;
-    background-color: #92b3b1;
+    background-color: #78a1bb; /* Softer blue */
     border: none;
     color: #ffffff;
     border-radius: 0.3em;
@@ -86,7 +159,7 @@ select option {
 .color-inp {
     width: 3.1em;
     height: 3.4em;
-    -webkit-apearance: none;
+    -webkit-appearance: none;
     background-color: transparent;
     outline: none;
     border: none;
@@ -94,11 +167,11 @@ select option {
 
 .color-inp::-webkit-color-swatch {
     border-radius: 0.3em;
-    border: 0.18em solid #5b6f6e;
+    border: 0.18em solid #1e5275;
 }
 .color-inp::-moz-color-swatch {
     border-radius: 0.3em;
-    border: 0.18em solid #5b6f6e;
+    border: 0.18em solid #1e5275;
 }
 
 .box {
@@ -118,14 +191,14 @@ select option {
 
 .box button:disabled {
     background-color: transparent;
-    color: #a7abb3;
-    border: 0.18em solid #a7abb3;
+    color: #99aebe;
+    border: 0.18em solid #b0b8be;
 }
 
 .box button {
     background-color: transparent;
-    color: #92b3b1;
-    border: 0.18em solid #92b3b1;
+    color: #78a1bb;
+    border: 0.18em solid #78a1bb;
     
 }
 
@@ -138,10 +211,10 @@ select {
 }
 
 .box a {
-    background-color: #92b3b1;
+    background-color: #78a1bb;
     color: #ffffff;
     text-decoration: none;
-    border: 0.18em solid #92b3b1;
+    border: 0.18em solid #78a1bb;
 }
 
 .container {
@@ -155,7 +228,7 @@ select {
 }
 
 #userInput:focus {
-    border-bottom-color: #92b3b1;
+    border-bottom-color: #0076c0;
 }
 
 
@@ -179,4 +252,29 @@ select {
         padding: 0.6em 1.5em;
         font-size: 0.9em;
     }
+}
+
+
+/* Footer Section */
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #8ea5b4; /* Darker shade */
+    padding: 1em;
+    position: relative;
+    bottom: 100%;
+    width: 100%;
+}
+
+.footer div {
+    margin: 0 1em;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #d3d3d3; /* Light grey hover effect */
 }
