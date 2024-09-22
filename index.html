@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <script src=
+        "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>QRcode</title>
+</head>
+<body>
+    <header class="header">
+        <a>Logo</a>
+    </header>
+    <div class="wrapper">
+
+
+        <input type="text" id="userInput" placeholder="Enter text or URL">
+
+        <div class="options">
+            <select class="sizeOptions" name="size" id="size"> 
+                <option value="100" >100 x 100</option>
+                <option value="200" >200 x 200</option>
+                <option value="300" selected>300 x 300</option>
+            </select>
+            <input type="color" id="BGcolor" class="color-inp"/>
+            <input type="color" id="FGcolor" class="color-inp"/>
+        </div>
+        <div class="box">
+            <button id="submit" disabled>Submit</button>
+            <a href="#" id="download">Download</a>
+        </div>
+        <div class="container">
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
