@@ -1,0 +1,1 @@
+https://czinaaz.github.io/new-qr-code/
