@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap");
+
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+.header {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #9aabb6, #9aabb6e2);
+    color: #ffffff;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.logo-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    text-decoration: none;
+}
+.logo-section {
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr{
+    font-family: "Bebas Neue", sans-serif;
+    color: #183a53;
+    font-size: 40px;
+    font-weight: 900;
+}
+.code {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.generator {
+    font-family:cursive;
+    color: #1e5275;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 25px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #183a53;
+}
+
+/* Hero Section */
+/* .hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+.hero-image {
+    background-image: url('./images/hero-image.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+} */
+
+/* Text container */
+.main_container {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    background-image: linear-gradient(to top,#9aabb6cd,#9aabb620),url(./images/bg/gray-background-with-white-texture-that-says-grunge_937196-2833.png);
+    background-size: auto;
+    background-position: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #5a6f7d;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #8ea5b4;
+    padding: 1em;
+}
+
+.footer div {
+    margin: 0 1em;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #d3d3d3;
+}
+
+/* Scroll animation */
+.hero-image {
+    animation: scrollMove 5s infinite ease-in-out;
+}
+
+@keyframes scrollMove {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
