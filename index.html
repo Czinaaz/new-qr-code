@@ -18,22 +18,38 @@
     <title>QRcode</title>
 </head>
 <body id="home">
-    <header class="header">
-        <div class="logo-section">
-            <img class="logo" src="./images/logo/DALL·E 2024-09-22 18.30.56 - A sleek and modern logo for a website with a QR code generator .png">
-            <a class="logo-text">
-                <span class="qr">QR</span><span class="code">code</span><span class="generator">Generator</span>
-            </a>
+    <!-- <header class="header">
+
+
+        
+    </header> -->
+    <header>
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+
+
+            <div class="logo-section" >
+                <img class="logo" src="./images/logo/DALL·E 2024-09-22 18.30.56 - A sleek and modern logo for a website with a QR code generator .png">
+                <a class="logo-text" href="./index.html" >
+    
+                    <span class="qr">QR</span><span class="code">code</span><span class="generator">Generator</span>
+                </a>
+            </div>
         </div>
-        <div class="navigation-bar">
+
+        <div class="nav-links">
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                </ul>
+                <a href="#projects">Home</a>
+                <a href="./about.html">About</a>
+                <!-- <a href="#contact">Contact</a> -->
             </nav>
         </div>
-        
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+            </label>
+        </div>
     </header>
     <main class="main_container">
         <div class="greetings">
@@ -65,11 +81,20 @@
             </div>
         </div>
     </main>
-    <div class="footer">
-        <div><a href="https://github.com/Czinaaz">GitHub</a></div>
-        <div><a href="https://www.linkedin.com/in/czinaaz/">LinkedIn</a></div>
-    </div>
+    <footer class="footer">
+
+        <div>
+            <a href="https://github.com/Czinaaz">Czinaaz 2024</a>
+        </div>
+        <!-- <ul class="footer-links">
+            <li><a href="https://github.com/Czinaaz">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/czinaaz/">LinkedIn</a></li>
+            
+            
+        </ul> -->
+    </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 </html>
