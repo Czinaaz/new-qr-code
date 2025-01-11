@@ -119,9 +119,9 @@ header #nav-check {
     gap: 24px;
     padding-top: 30px;
     padding-bottom: 80px;
-    background-image: linear-gradient(to top,#aab2b7cd,#a9b1b720),url(./images/bg/gray-background-with-white-texture-that-says-grunge_937196-2833.png);
+    /* background-image: linear-gradient(to top,#aab2b7cd,#a9b1b720),url(./images/bg/gray-background-with-white-texture-that-says-grunge_937196-2833.png);
     background-size: auto;
-    background-position: center;
+    background-position: center; */
 }
 
 .greetings {

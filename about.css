@@ -129,9 +129,7 @@ header #nav-check {
     display: flex;
     flex-direction: column;
     height: auto;
-    background-image: linear-gradient(to top,#aab2b7cd,#a9b1b720),url(./images/bg/gray-background-with-white-texture-that-says-grunge_937196-2833.png);
-    background-size: auto;
-    background-position: center;
+    background-color: #f0f2f5;
 }
 
 .text-container {
