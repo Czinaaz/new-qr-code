@@ -15,7 +15,7 @@ JavaScript
 git clone https://github.com/your-username/qr-code-generator.git
 2. Navigate to the project directory:
 cd qr-code-generator
-3.Open the index.html file in your browser to run the app.
+3. Open the index.html file in your browser to run the app.
 
 # Usage
 Enter the text you want to encode in the input field.
