@@ -9,31 +9,30 @@ const FGcolor = document.getElementById('FGcolor');
 let QR_Code;
 let sizeChoice, BGColorChoice, FGColorChoice;
 
-// Set size
+
 sizeOption.addEventListener('change', () => {
     sizeChoice = sizeOption.value;
 });
 
-// Set background color
+
 BGcolor.addEventListener('input', () => {
     BGColorChoice = BGcolor.value;
 });
 
-// Set foreground color
+
 FGcolor.addEventListener('input', () => {
     FGColorChoice = FGcolor.value;
 });
 
-// Format input
 const inputFormatter = (value) => {
     return value.trim().replace(/[^a-zA-Z0-9]+/g, "");
 };
 
-// Handle submit click
+
 submitBtn.addEventListener('click', async () => {
     container.innerHTML = '';
 
-    // Generate QR code
+
     QR_Code = await new QRCode(container, {
         text: userInput.value,
         width: sizeChoice,
@@ -42,7 +41,7 @@ submitBtn.addEventListener('click', async () => {
         colorLight: BGColorChoice,
     });
 
-    // Set download URL for QR code image
+
     const src = container.firstChild.toDataURL('image/png');
     downloadBtn.href = src;
 
@@ -57,7 +56,7 @@ submitBtn.addEventListener('click', async () => {
     downloadBtn.classList.remove('hide');
 });
 
-// Handle input change to enable/disable submit button
+
 userInput.addEventListener('input', () => {
     if (userInput.value.trim().length < 1) {
         submitBtn.disabled = true;
@@ -68,7 +67,30 @@ userInput.addEventListener('input', () => {
     }
 });
 
-// Initialize default values on page load
+const messageEl = document.getElementById('message');
+
+function showMessage(text, duration = 3000) {
+    messageEl.textContent = text;
+    messageEl.classList.remove('hidden');
+    void messageEl.offsetWidth; 
+    messageEl.classList.add('show');
+
+    setTimeout(() => {
+        messageEl.classList.remove('show');
+        setTimeout(() => {
+        messageEl.classList.add('hidden');
+        }, 300); 
+    }, duration);
+}
+
+downloadBtn.addEventListener('click', (e) => {
+    if (!downloadBtn.href || downloadBtn.classList.contains('hide')) {
+        e.preventDefault();
+        showMessage('Please generate a QR code first before downloading.');
+    }
+});
+
+
 window.onload = () => {
     container.innerHTML = '';
     sizeChoice = 300;
