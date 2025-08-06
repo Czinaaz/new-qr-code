@@ -68,11 +68,15 @@
     </main>
 
     <footer class="footer">
-        <div>
-            <a href="https://github.com/Czinaaz" target="_blank" rel="noopener">Czinaaz 2025</a>
+        <div class="footer-copy">
+            <p><span id="year"></span></p>
+            <a href="https://github.com/Czinaaz" target="_blank" rel="noopener noreferrer" > <i class="fab fa-github"></i>  Czinaaz</a>
+            <p>© All rights reserved</p>
         </div>
     </footer>
-
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="./js/script.js" defer></script>
     <script src="./js/burger.js" defer></script>
 </body>

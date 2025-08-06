@@ -162,7 +162,7 @@ header {
     backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 20% auto;
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
@@ -273,11 +273,18 @@ a#download:hover {
 
 }
 
+.footer-copy {
+    text-align: center;
+    color: #555555;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
 footer.footer {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 0.9rem;
-    color: #666;
+    color: #474747;
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     border-top: 1px solid var(--glass-border);
